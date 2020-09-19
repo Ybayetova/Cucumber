@@ -1,0 +1,10 @@
+@regressiontest @TEC-1010 @ui
+  Feature: Validating Headers
+
+    @TEC-2012
+    Scenario: Validation of Product Information Headers
+      Given User navigates to WebOrders application
+      When User provides username "username" and password "password"
+      And User clicks on Order Part
+      Then User validates UI headers with "TestCases" excel file expected result
+      And User updates "TestCases" with "PASS"
