@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "junit:target/cucumber.xml",
                 "rerun:target/rerun.txt"},
-        features = "src/test/resources/WebOrderTest",
+        features = "src/test/resources",
         glue = "StepDefinition",
         tags = "@TEC-2015",
         dryRun = false
